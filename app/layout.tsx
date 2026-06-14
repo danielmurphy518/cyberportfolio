@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Source_Code_Pro } from "next/font/google";
 import "./globals.css";
+import Sidebar from "./Sidebar";
 
 const sourceCodePro = Source_Code_Pro({
   variable: "--font-source-code-pro",
@@ -22,7 +23,10 @@ export default function RootLayout({
       lang="en"
       className={`${sourceCodePro.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col md:flex-row">
+        <Sidebar />
+        <main className="flex-1 flex flex-col pl-16">{children}</main>
+      </body>
     </html>
   );
 }

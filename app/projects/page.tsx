@@ -18,6 +18,35 @@ export default function Projects() {
           </h1>
 
           <div className="space-y-3 w-full max-w-xl">
+            {/* GitHub History Card */}
+            <div
+              className="border border-[#171717] py-4 px-4 overflow-hidden rounded-md bg-[--background]"
+            >
+              <div className="flex flex-col gap-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-base font-black uppercase tracking-tighter leading-tight">GitHub Activity</span>
+                  <span className="text-[10px] opacity-50 tabular-nums uppercase">2026</span>
+                </div>
+                <div className="w-full overflow-hidden">
+                  <img 
+                    src="https://ghchart.rshah.org/171717/danielmurphy518" 
+                    alt="Daniel Murphy's GitHub contribution chart" 
+                    className="w-full h-auto mix-blend-multiply"
+                  />
+                </div>
+                <div className="flex justify-end">
+                  <a 
+                    href="https://github.com/danielmurphy518" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs font-bold underline underline-offset-4 decoration-[#171717]/30 hover:decoration-[#171717] transition-all"
+                  >
+                    VIEW_PROFILE [↗]
+                  </a>
+                </div>
+              </div>
+            </div>
+
             {projects.map((project, index) => (
             <div key={index} className="border border-[#171717] py-4 px-4 overflow-hidden rounded-md">
               <div className="flex flex-col gap-1">

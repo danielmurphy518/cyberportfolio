@@ -11,10 +11,10 @@ export default function Home() {
               Developer
             </p>
             <p className="text-sm md:text-lg leading-relaxed opacity-90">
-              I am a software developer with 5 years of experience working across various industries from financial consulting to music and data analysis. Throughout this time, I&apos;ve relied on my technical background to develop software and build cool stuff.
+              I am a software developer with 5 years of experience working across various industries from financial consulting to music and data analysis. In every position, I&apos;ve leveraged my technical knowledge and innovative ability to develop new solutions.
             </p>
             <p className="text-sm md:text-lg leading-relaxed opacity-90">
-              In my spare time I enjoy working on other software projects, playing classical guitar, and physical fitness (the gym).
+              In my spare time I enjoy working on other software projects, playing classical guitar, and working out.
             </p>
           </div>
         </div>

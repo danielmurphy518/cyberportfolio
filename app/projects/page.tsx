@@ -31,7 +31,7 @@ export default function Projects() {
                   <img 
                     src="https://ghchart.rshah.org/171717/danielmurphy518" 
                     alt="Daniel Murphy's GitHub contribution chart" 
-                    className="w-full h-auto mix-blend-multiply"
+                  className="w-full h-auto mix-blend-multiply contrast-150"
                   />
                 </div>
                 <div className="flex justify-end">

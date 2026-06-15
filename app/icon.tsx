@@ -9,10 +9,18 @@ export const size = {
 };
 export const contentType = 'image/png';
 
-export default function Icon() {
+export default async function Icon() {
+  // Fetch the SVG data dynamically from Iconify
+  const res = await fetch('https://api.iconify.design/game-icons.json?icons=capybara');
+  const data = await res.json();
+  
+  // Extract all path 'd' attributes from the SVG body
+  // (Next.js OG / Satori requires React elements, so we parse the raw string into arrays)
+  const body = data.icons?.capybara?.body || '';
+  const paths = Array.from(body.matchAll(/d="([^"]+)"/g)).map((m) => m[1]);
+
   return new ImageResponse(
     (
-      // ImageResponse rendering a black square with a cream cat outline
       <div
         style={{
           background: '#171717',
@@ -26,16 +34,12 @@ export default function Icon() {
         <svg
           width="24"
           height="24"
-          viewBox="0 0 256 256"
-          fill="none"
-          stroke="#efe5c0"
-          strokeWidth="16"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          viewBox="0 0 512 512"
+          fill="#efe5c0"
         >
-          <path d="M216,40,185.1,70.9a95.5,95.5,0,0,0-114.2,0L40,40V128a88,88,0,0,0,176,0Z" />
-          <circle cx="92" cy="140" r="10" fill="#efe5c0" stroke="none" />
-          <circle cx="164" cy="140" r="10" fill="#efe5c0" stroke="none" />
+          {paths.map((d, i) => (
+            <path key={i} d={d} />
+          ))}
         </svg>
       </div>
     ),

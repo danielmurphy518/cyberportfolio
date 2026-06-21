@@ -10,7 +10,7 @@ const sourceCodePro = Source_Code_Pro({
 
 export const metadata: Metadata = {
   title: "Daniel Murphy | Portfolio",
-  description: "Personal portfolio built with Next.js and Source Code Pro",
+  description: "Portfolio built with Next.js and Source Code Pro",
 };
 
 export default function RootLayout({

@@ -28,10 +28,11 @@ export default function Projects() {
                   <span className="text-[10px] opacity-50 tabular-nums uppercase">2026</span>
                 </div>
                 <div className="w-full overflow-hidden">
-                  <img 
-                    src="https://ghchart.rshah.org/171717/danielmurphy518" 
-                    alt="Daniel Murphy's GitHub contribution chart" 
-                  className="w-full h-auto mix-blend-multiply contrast-150"
+                  <img
+                    src="https://ghchart.rshah.org/000000/danielmurphy518"
+                    alt="GitHub contribution chart"
+                    className="w-full h-auto opacity-90 contrast-125"
+                    style={{ imageRendering: 'pixelated' }}
                   />
                 </div>
                 <div className="flex justify-end">
@@ -48,7 +49,7 @@ export default function Projects() {
             </div>
 
             {projects.map((project, index) => (
-            <div key={index} className="border border-[#171717] py-4 px-4 overflow-hidden rounded-md">
+            <div key={index} className="border-2 border-[#171717] py-4 px-4 overflow-hidden rounded-md">
               <div className="flex flex-col gap-1">
                 <span className="text-base font-black uppercase tracking-tighter leading-tight">{project.title}</span>
                 <span className="text-sm opacity-80">

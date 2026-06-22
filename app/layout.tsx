@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Daniel Murphy | Portfolio",
   description: "Personal portfolio built with Next.js and Source Code Pro",
   icons: {
-    icon: "/icon-v2",
+    icon: "/icon2-v2",
   },
 };
 

@@ -87,8 +87,7 @@ export default function Contact() {
                         type="email" 
                         placeholder="Your email address"
                         required
-                        className="bg-transparent border border-[#171717]/30 p-2 text-xs outline-none focus:border-[#171717] transition-colors placeholder:text-[#171717]/30"
-                      />
+                        className="bg-[#171717]/5 border border-[#171717]/40 p-2 text-xs outline-none focus:border-[#171717] transition-colors placeholder:text-[#171717]/30"                      />
                     </div>
                     <div className="flex flex-col gap-1">
                       <span className="text-[10px] uppercase opacity-70 font-bold">Message</span>
